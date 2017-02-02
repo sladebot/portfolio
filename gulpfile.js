@@ -224,7 +224,7 @@ gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'extras'], functio
 gulp.task('default', ['clean', 'build']);
 
 // deploy
-gulp.task('deploy', ['clean', 'build'], () => {
+gulp.task('deploy', () => {
     return gulp.src("./dist/**/*")
         .pipe(deploy())
 });
