@@ -1,0 +1,50 @@
+@import "../bower_components/materialize/dist/css/materialize.min.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import 'home/index.scss';
+@import 'portfolio/index.scss';
+@import 'resume/index.scss';
+@import 'sketch/home.scss';
+@import 'nav.scss';
+@import 'animate.scss';
+@import 'contact.scss';
+
+
+html, body{
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "museo", "serif";
+}
+
+.pacifico {
+  font-family: "museo";
+}
+
+.header {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  margin: 40px;
+  
+  .brand {
+    display:flex;
+    flex-direction:column;
+    h1 {
+      margin-top: 0px;
+      margin-left: 20px;
+    }
+  }
+
+  .back {
+    display:flex;
+    flex-direction:column;
+  }
+
+  .navbar {
+    display:flex;
+    flex-direction:column;
+  }
+}

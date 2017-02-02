@@ -1,0 +1,48 @@
+ul.nav-item {
+    margin: 0;
+    // position: fixed;
+
+    li{
+      text-align: center;
+      display: flex;
+      list-style: none;
+      padding: 10px 10px;
+      cursor: pointer;
+      line-height: 30px;
+
+      a{
+        background: transparent;
+        padding-bottom: 10px;
+        width: auto;
+        font-weight: 300;
+        text-decoration: none;
+        font-family: "museo";
+      }
+      a:before {
+        background: transparent;
+      }
+
+      a:after{
+        display: block;
+        content: '';
+        transform: scaleX(0);
+        transition: transform 150ms ease-in-out;
+      }
+
+      a.hover-white:after {
+        border-bottom: 1px solid white;
+      }
+      a.hover-teal:after {
+        border-bottom: 1px solid #019688;
+      }
+      a.hover-light-blue:after {
+        border-bottom: 1px solid #039be5;
+      }
+      a.hover-red:after {
+        border-bottom: 1px solid #d32f2f;
+      }
+      
+      a:hover:after { transform: scaleX(1);  };
+    }
+  }
+  

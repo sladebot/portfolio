@@ -1,0 +1,40 @@
+.portfolio-container {
+  font-family: "museo";
+  .card {
+    .card-content-text {
+      margin-bottom: 25px;
+    }
+    .card-image {
+      img.img-height-limit {
+        max-height: 250px;
+        min-height: 250px;
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 56%;
+        height: 4px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+        background: rgba(21,101,192,.7);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 4px;
+      }
+    }
+    .card-image.card-height-limit {
+      max-height: 250px;
+      min-height: 250px;
+    }
+  }
+}
+
+.portfolio-header {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  h2 {
+    font-family: "museo", "serif";
+    color: rgba(256,256,256,1);
+  }
+}

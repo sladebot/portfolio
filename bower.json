@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "homepage": "https://github.com/sladebot/portfolio",
+  "authors": [
+    "Souranil Sen <souranil@gmail.com>"
+  ],
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "^2.8.3",
+    "materialize": "^0.98.0",
+    "mdi": "^1.8.36"
+  },
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "app/bower_components"
+  ]
+}

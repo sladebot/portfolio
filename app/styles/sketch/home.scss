@@ -1,0 +1,84 @@
+.sketch-home {
+  background: white;
+  color: #00897B;
+  font-family: "Pacifico";
+  font-weight: 300;
+  a {
+    color: #00897B;
+  }
+}
+
+.sketch-container {
+  font-family: "museo", "serif";
+  height: 800px;
+  h4 {
+    color: #00897B;
+    font-weight: 100;
+    text-align: center;
+    font-size: 24px;
+  }
+  .abstract {
+    .intro {
+      margin-bottom: 10px;
+    }
+    .question {
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+    .answer {
+      margin-bottom: 10px;
+    }
+  }
+  .image-height-limit {
+    max-height: 250px;
+    min-height: 250px;
+  }
+  .affordance-items {
+    h4 {
+      font-weight: 400;
+    }
+    ul {
+      li {
+        color: black;
+      }
+    }
+    .affordance-item-header {
+      font-weight: 400;
+    }
+  }
+  .signifiers-items, .theories {
+    h4 {
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      li {
+        color: black;
+      }
+    }
+    .signifier-item-header {
+      font-weight: 400;
+    }
+  }
+
+  .theories {
+    
+    .theory-name {
+      font-weight: 400;
+      margin-bottom: 10px;
+      span {
+        padding-bottom: 2px;
+      }
+    }
+    .theory-explanation {
+      font-weight: 200;
+      margin-bottom: 40px;
+
+    }
+  }
+}
+
+.sketch-container:before {
+  border-left: #00897B;
+}
