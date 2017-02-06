@@ -14,12 +14,6 @@ export default class Arduino extends React.Component {
           <Navbar menuItems={menuItems} location="right" textColor="red-text text-darken-2" hoverClass="hover-red" appendClasses="navbar"/>
         </div>
         <div className="container arduino-container animate fadeInUp one">
-          
-          <div className="row">
-            <div className="col s12 m12 l12">
-              
-            </div>
-          </div>
 
           <div className="row">
             <div className="col s12 m12 l12">
@@ -30,6 +24,13 @@ export default class Arduino extends React.Component {
                 </div>
               </div>
             </div>            
+          </div>
+
+          <div className="row">
+            <div className="col s12 m12 l12">
+                <div className="credits">Partnered with - Amit Bapat</div>
+                <a href="http://abapat.github.io/cse592.html">Find More</a>
+            </div>
           </div>
 
 
