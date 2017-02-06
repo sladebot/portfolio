@@ -16,6 +16,25 @@ export default class Arduino extends React.Component {
         <div className="container arduino-container animate fadeInUp one">
 
           <div className="row">
+            <div className="col s12 m12 l12 arduino-conclusion">
+              <div className="card-panel red darken-1">
+                <span className="white-text">
+                  
+                  <article className="theory-item">
+                    <div className="theory-name">
+                      <span>
+                        <a className="external-link" href="http://abapat.github.io/cse592.html">Arduino Assignment 2 (External Link)</a>
+                      </span>
+                    </div>
+                    
+                  </article>
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="row">
             <div className="col s12 m12 l12">
               <div className="card">
                 <div className="card-image">
