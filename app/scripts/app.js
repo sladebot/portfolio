@@ -8,6 +8,7 @@ import Contact from "./contact";
 import Portfolio from "./portfolio";
 import Sipper from "./sipper";
 import Arduino from "./arduino";
+import Fabrication from "./fabrication";
 
 render(
   <Router history={hashHistory}>
@@ -19,5 +20,6 @@ render(
     <Route path="/about" component={Contact}/>
     <Route path="/sipper" component={Sipper}/>
     <Route path="/arduino" component={Arduino}/>
+    <Route path="/fabrication" component={Fabrication}/>
   </Router>,
   document.getElementById('app'));

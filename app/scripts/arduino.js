@@ -23,7 +23,7 @@ export default class Arduino extends React.Component {
                   <article className="theory-item">
                     <div className="theory-name">
                       <span>
-                        <a className="external-link" href="http://abapat.github.io/cse592.html">Arduino Assignment 2 (External Link)</a>
+                        <a className="white-text external-link" href="http://abapat.github.io/cse592.html">Arduino Assignment 2 (External Link)</a>
                       </span>
                     </div>
                     
@@ -48,7 +48,7 @@ export default class Arduino extends React.Component {
           <div className="row">
             <div className="col s12 m12 l12">
                 <div className="credits">Partnered with - Amit Bapat</div>
-                <a href="http://abapat.github.io/cse592.html">Find More</a>
+                <a className="external-link" href="http://abapat.github.io/cse592.html">Find More</a>
             </div>
           </div>
 

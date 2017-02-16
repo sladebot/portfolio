@@ -41,6 +41,9 @@ ul.nav-item {
       a.hover-red:after {
         border-bottom: 1px solid #d32f2f;
       }
+      a.hover-green:after {
+        border-bottom: 1px solid #2e7d32;
+      }
       
       a:hover:after { transform: scaleX(1);  };
     }
