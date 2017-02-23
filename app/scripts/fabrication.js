@@ -6,6 +6,12 @@ import Navbar from "./navbar";
 import { menuItems } from "./data/menu_items";
 
 export default class Fabrication extends React.Component {
+  componentDidMount() {
+    console.log("Mounted;");
+      $('.slider').slider();
+  }
+
+
   render() {
     return (
       <div className="arduino-home">
@@ -14,14 +20,14 @@ export default class Fabrication extends React.Component {
           <Navbar menuItems={menuItems} location="right" textColor="green-text text-darken-2" hoverClass="hover-green" appendClasses="navbar"/>
         </div>
         <div className="container arduino-container animate fadeInUp one">
-
-
           <div className="row">
             <div className="col s12 m12 l12">
               <div className="card">
                 <div className="card-image">
-                  <img className="materialboxed" src="https://dl.dropbox.com/s/6egla0cp1zjwe3v/fabrication.jpg?dl=0" />
-                  <span className="card-title pacifico"></span>
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/w8yeyf9jgresb85/fabrication-box7.jpeg?dl=0" height="600px" />  
+                </div>
+                <div className="card-content">
+                  <span className="card-title green-text text-darken-2 pacifico">Arduino Uno enclosure fabrication with acrylic</span>
                 </div>
               </div>
             </div>            
@@ -33,6 +39,61 @@ export default class Fabrication extends React.Component {
                 <a className="external-link" href="http://abapat.github.io/cse592.html">Find More</a>
             </div>
           </div>
+
+          <div className="row">
+            <div className="col s12 m6 l6">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/4anzwjq76989hl4/fabrication-box1.jpeg?dl=0" />
+                </div>
+              </div>
+            </div>
+
+            <div className="col s12 m6 l6">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/1u6740o8bvfo8ty/fabrication-box5.jpeg?dl=0" />
+                </div>
+              </div>
+            </div>
+
+            <div className="col s12 m6 l6">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/uvv6y6kglxq6hsy/fabrication-box2.jpeg?dl=0" />
+                </div>
+              </div>
+            </div>
+
+            <div className="col s12 m6 l6">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/emuh416pgdgdck9/fabrication-box3.jpeg?dl=0" />
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+
+
+
+
+
+
+          
+          <div className="row">
+            <div className="col s12 m12 l12">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/6egla0cp1zjwe3v/fabrication.jpg?dl=0" />
+                  <span className="card-title pacifico"></span>
+                </div>
+              </div>
+            </div>            
+          </div>
+
+          
 
 
           <div className="row">

@@ -1,6 +1,13 @@
+.brand {
+  display: flex;
+  flex-direction: column;
+}
 .file-download {
   a {
     margin:20px;
     display: inline-block;
   }
+}
+.header {
+  margin: 40px 40px 0 40px;
 }
