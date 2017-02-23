@@ -23,6 +23,29 @@ export default class Portfolio extends React.Component {
             <div className="col s12 m4 l4">
               <div className="card animate fadeInUp one">
                 <div className="card-image">
+                  <img className="img-height-limit" src="https://dl.dropbox.com/s/3cw119ckh8yd7cx/mouse-hd-2.png?dl=0"/>
+                  <span className="card-title">
+                    <Link to="/cad" className="white-text">
+                      3D Design & Fabrication
+                    </Link>
+                  </span>
+                  <Link to="/cad" className="btn-floating halfway-fab waves-effect waves-light teal">
+                    <i className="material-icons">arrow_forward</i>
+                  </Link>
+                </div>
+                <div className="card-content">
+                  <div className="card-content-text">
+                    <p>Some 3D CAD design and fabrication</p>
+                  </div>
+                  <div className="chip"><a href="https://www.twitter.com/hashtag/cad">#cad</a></div>
+                  <div className="chip"><a href="https://www.twitter.com/hashtag/design">#design</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col s12 m4 l4">
+              <div className="card animate fadeInUp one">
+                <div className="card-image">
                   <img className="img-height-limit" src="https://dl.dropbox.com/s/4anzwjq76989hl4/fabrication-box1.jpeg?dl=0"/>
                   <span className="card-title">
                     <Link to="/fabrication" className="white-text">

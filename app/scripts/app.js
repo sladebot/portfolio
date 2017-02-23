@@ -7,6 +7,7 @@ import Resume from "./resume";
 import Contact from "./contact";
 import Portfolio from "./portfolio";
 import Sipper from "./sipper";
+import Cad from "./cad"
 import Arduino from "./arduino";
 import Fabrication from "./fabrication";
 
@@ -21,5 +22,6 @@ render(
     <Route path="/sipper" component={Sipper}/>
     <Route path="/arduino" component={Arduino}/>
     <Route path="/fabrication" component={Fabrication}/>
+    <Route path="/cad" component={Cad}/>
   </Router>,
   document.getElementById('app'));
