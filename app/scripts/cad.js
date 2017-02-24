@@ -48,6 +48,13 @@ export default class Cad extends React.Component {
             </div>
           </div>
 
+          <div className="row">
+            <div className="col s12 m12 l12">
+                <div className="credits">Partnered with - Amit Bapat</div>
+                <a className="external-link" href="http://abapat.github.io/cse592.html">Find More</a>
+            </div>
+          </div>
+
           <div className="row sipper-demos">
             <div className="col s12 m4 l4">
               <div className="card">
@@ -95,6 +102,12 @@ export default class Cad extends React.Component {
                       Imported the stl file and started orienting the models ( imported mouse wheel and body separately for materials ) and then added V-Ray materials 
                       to both. Apart from that added a plane for a nice light effect. Added V-Ray lights to light up the scene properly and rendered across various angles
                       using V-Ray Ray tracing.
+                    </div>
+                    <div>
+                      <div className="file-download">
+                        <a href="https://dl.dropbox.com/s/2e7sof9wj2hicsq/mouse-final-3d.fpp?dl=0" className="waves-effect waves-light btn white green-text text-darken-2"><i className="material-icons right">system_update_alt</i>FPP File</a>
+                    <a href="https://dl.dropbox.com/s/4wqmt48gj474yso/mouse-final-3d.stl?dl=0" className="waves-effect waves-light btn white green-text text-darken-2"><i className="material-icons right">system_update_alt</i>STL file</a>
+                      </div>
                     </div>
                   </article>
                 </span>
