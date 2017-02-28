@@ -25,15 +25,15 @@ export default class Cad extends React.Component {
           </div>
 
           <div className="row mouse-3d-printed">
-            <div className="col s8 m6 l6">
+            <div className="col s8 m4 l4">
               <div className="card">
                 <div className="card-image">
-                  <img className="materialboxed img-height-limit" src="https://dl.dropbox.com/s/x0tbcarvbli9btf/3d-printed-mouse-1.jpg?dl=0" />
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/x0tbcarvbli9btf/3d-printed-mouse-1.jpg?dl=0" />
                 </div>
               </div>
             </div>
 
-            <div className="col s4 m6 l6">
+            <div className="col s4 m8 l8">
               <div className="card-panel teal">
                 <span className="white-text">
                   <article>
@@ -60,7 +60,7 @@ export default class Cad extends React.Component {
             <div className="col s12 m4 l4">
               <div className="card">
                 <div className="card-image">
-                  <img className="materialboxed img-height-limit" src="https://dl.dropbox.com/s/jgugnmyu094lrma/3d-printed-mouse-4.jpg?dl=0" />
+                  <img className="materialboxed " src="https://dl.dropbox.com/s/jgugnmyu094lrma/3d-printed-mouse-4.jpg?dl=0" />
                 </div>
               </div>
             </div>
