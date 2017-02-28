@@ -24,6 +24,65 @@ export default class Cad extends React.Component {
             </div>
           </div>
 
+          <div className="row mouse-3d-printed">
+            <div className="col s8 m6 l6">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed img-height-limit" src="https://dl.dropbox.com/s/x0tbcarvbli9btf/3d-printed-mouse-1.jpg?dl=0" />
+                </div>
+              </div>
+            </div>
+
+            <div className="col s4 m6 l6">
+              <div className="card-panel teal">
+                <span className="white-text">
+                  <article>
+                    <div className="intro">
+                      <p className="bold">
+                        3D Printed with FlashForge Pro Mini
+                      </p>
+                      This was printed with a PCA material base with 210 degrees extruder temperature and 80 degrees platform temperature.
+                      This setting was achieved after trying and tweaking for a couple of times. No raft was used for this but one single small support
+                      was used for the mouse wheel below the same. The layers were not required to be tilted because the structure is more horizontal and 
+                      hence it was pretty stable. As for the curved structure of the top of the mouse it did a pretty good job but maybe a better curvature can be 
+                      achieved if printed sideways rather than bottom up.
+                    </div>
+                    
+                  </article>
+                </span>
+              </div>
+            </div>
+            
+            
+          </div>
+
+          <div className="row mouse-3d-printed">
+            <div className="col s12 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed img-height-limit" src="https://dl.dropbox.com/s/jgugnmyu094lrma/3d-printed-mouse-4.jpg?dl=0" />
+                </div>
+              </div>
+            </div>
+
+            <div className="col s12 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed img-height-limit" src="https://dl.dropbox.com/s/034v5tbs0wnz7f4/3d-printed-mouse-2.jpg?dl=0" />
+                </div>
+              </div>
+            </div>
+
+            <div className="col s12 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed img-height-limit" src="https://dl.dropbox.com/s/4v8n7fgirvm64ea/3d-printed-mouse-5.jpg?dl=0" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
           <div className="row">
             <div className="col s12 m7 l7">
               <div className="card">
@@ -105,8 +164,8 @@ export default class Cad extends React.Component {
                     </div>
                     <div>
                       <div className="file-download">
-                        <a href="https://dl.dropbox.com/s/2e7sof9wj2hicsq/mouse-final-3d.fpp?dl=0" className="waves-effect waves-light btn white green-text text-darken-2"><i className="material-icons right">system_update_alt</i>FPP File</a>
-                    <a href="https://dl.dropbox.com/s/4wqmt48gj474yso/mouse-final-3d.stl?dl=0" className="waves-effect waves-light btn white green-text text-darken-2"><i className="material-icons right">system_update_alt</i>STL file</a>
+                        <a href="https://dl.dropbox.com/s/vktjia6w47a61j7/mouse-final-3d.gx?dl=0" className="waves-effect waves-light btn white green-text text-darken-2"><i className="material-icons right">system_update_alt</i>GX File</a>
+                        <a href="https://dl.dropbox.com/s/4wqmt48gj474yso/mouse-final-3d.stl?dl=0" className="waves-effect waves-light btn white green-text text-darken-2"><i className="material-icons right">system_update_alt</i>STL file</a>
                       </div>
                     </div>
                   </article>

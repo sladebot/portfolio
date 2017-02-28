@@ -23,10 +23,10 @@ export default class Portfolio extends React.Component {
             <div className="col s12 m4 l4">
               <div className="card animate fadeInUp one">
                 <div className="card-image">
-                  <img className="img-height-limit" src="https://dl.dropbox.com/s/3cw119ckh8yd7cx/mouse-hd-2.png?dl=0"/>
+                  <img className="img-height-limit" src="https://dl.dropbox.com/s/x0tbcarvbli9btf/3d-printed-mouse-1.jpg?dl=0"/>
                   <span className="card-title">
                     <Link to="/cad" className="white-text">
-                      3D Design & Fabrication
+                      3D  Fabrication
                     </Link>
                   </span>
                   <Link to="/cad" className="btn-floating halfway-fab waves-effect waves-light teal">
