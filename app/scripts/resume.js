@@ -1,9 +1,10 @@
 import React from 'react';
+import * as _ from 'lodash';
 import * as ReactDOM from 'react-dom';
 import { Router, Route, Link } from 'react-router';
 
 import Navbar from "./navbar";
-import { menuItems } from "./data/menu_items";
+import { menuItems, linkItems, resumeLinkItems } from "./data/menu_items";
 
 export default class Resume extends React.Component {
   render() {
@@ -21,27 +22,43 @@ export default class Resume extends React.Component {
                   <span>Souranil</span>
                   <span>Sen</span>
                 </div>
+                <div className="col s12 m12 l12">
+                  <nav className="transparent z-depth-0 navbar">
+                    <div className="nav-wrapper">
+                      <ul className="resume-link-items nav-item">
+                        {_.map(resumeLinkItems, resumeLinkItem => (
+                          <li key={resumeLinkItem.link}>
+                            <a href={resumeLinkItem.link}>
+                              <i className={"mdi mdi-" + resumeLinkItem.icon + " mdi-dark mdi-36px"}></i>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
                 <div className="description col s12 m12 l12">
-                  <div className="card-panel white">
-                    <div className="light-blue-text text-darken-1">
+                  <div className="white">
+                    <div className="black-text text-darken-1">
                       I’m a Fullstack Developer with a craving for scalable systems and data analytics. 
                       I build resilient web-products, and love solving programming problems. 
                       I code in ruby, nodejs and now getting my hands dirty on Clojure and Elixir.
                     </div>
                   </div>
                 </div>
+                
                 <div className="links col s12 m12 l12">
                   <a href="http://www.sladebot.com">http://www.sladebot.com</a>
                   <a href={"mailto:souranil@gmail.com"}>souranil@gmail.com</a>
                   <a href={"tel:+1-631-452-6565"}>+1-631-452-6565</a>
                 </div>
                 <div className="skills col s12 m12 l12">
-                  <h2>Skills</h2>
+                  <h2 className="light-blue-text text-darken-3">Skills</h2>
                   <div className="row">
                     <div className="col s12 m6 l6">
                       <div className="card-panel white">
-                        <div className="light-blue-text text-darken-1">
-                          <h6>Programming</h6>
+                        <div className="black-text text-darken-1">
+                          <h6 className="light-blue-text text-darken-1">Programming</h6>
                           <ul>
                             <li className="skill-element">Ruby</li>
                             <li className="skill-element">Javascript</li>
@@ -55,8 +72,8 @@ export default class Resume extends React.Component {
                     </div>
                     <div className="col s12 m6 l6">
                       <div className="card-panel white">
-                        <div className="light-blue-text text-darken-1">
-                          <h6>Tools</h6>
+                        <div>
+                          <h6 className="light-blue-text text-darken-1">Tools</h6>
                           <ul>
                             <li className="skill-element">Docker</li>
                             <li className="skill-element">Kubernetes</li>
@@ -70,8 +87,8 @@ export default class Resume extends React.Component {
                     </div>
                     <div className="col s12 m6 l6">
                       <div className="card-panel white">
-                        <div className="light-blue-text text-darken-1">
-                          <h6>Research</h6>
+                        <div className="">
+                          <h6 className="light-blue-text text-darken-1">Research</h6>
                           <ul>
                             <li className="skill-element">Sentiment Analysis</li>
                             <li className="skill-element">Concurrency</li>
@@ -82,8 +99,8 @@ export default class Resume extends React.Component {
                     </div>
                     <div className="col s12 m6 l6">
                       <div className="card-panel white">
-                        <div className="light-blue-text text-darken-1">
-                          <h6>Methodologies</h6>
+                        <div className="">
+                          <h6 className="light-blue-text text-darken-1">Methodologies</h6>
                           <ul>
                             <li className="skill-element">Agile Methodologies</li>
                             <li className="skill-element">Kanban</li>
@@ -99,24 +116,34 @@ export default class Resume extends React.Component {
             <div className="col s12 m6 l6 experience">
               <div className="row">
                 <div className="col s12 m12 l12 education">
-                  <h6>Education</h6>
+                  <h6 className="light-blue-text text-darken-3">Education</h6>
                   <div className="row">
-                    <div className="col s12 m2 l2">
+                    <div className="col s12 m2 l2 light-blue-text text-darken-3">
+                      <span className="date">Jan 2017</span>
+                      <span className="date">Present</span>
+                    </div>
+                    <div className="col s12 m10 l10">
+                      <div className="title">Stony Brook University | New York</div>
+                      <div className="description">Masters in Computer Science</div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col s12 m2 l2 light-blue-text text-darken-3">
                       <span className="date">Aug 2008</span>
                       <span className="date">May 2012</span>
                     </div>
                     <div className="col s12 m10 l10">
                       <div className="title">Techno India, WBUT | INDIA</div>
-                      <div className="description">Techno India, WBUT | INDIA</div>
+                      <div className="description">Bachelors in Information Technology</div>
                     </div>
                   </div>
                 </div>
 
                 <div className="col s12 m12 l12 work">
-                  <h6>Work Experience</h6>
+                  <h6 className="light-blue-text text-darken-3">Work Experience</h6>
                   
                   <div className="row">
-                    <div className="col s12 m2 l2">
+                    <div className="col s12 m2 l2 light-blue-text text-darken-3">
                       <span className="date">Mar 2016</span>
                       <span className="date">Dec 2016</span>
                     </div>
@@ -135,7 +162,7 @@ export default class Resume extends React.Component {
 
 
                   <div className="row">
-                    <div className="col s12 m2 l2">
+                    <div className="col s12 m2 l2 light-blue-text text-darken-3">
                       <span className="date">Dec 2015</span>
                       <span className="date">Mar 2016</span>
                     </div>
@@ -154,7 +181,7 @@ export default class Resume extends React.Component {
 
 
                   <div className="row work">
-                    <div className="col s12 m2 l2">
+                    <div className="col s12 m2 l2 light-blue-text text-darken-3">
                       <span className="date">Aug 2014</span>
                       <span className="date">Jun 2015</span>
                     </div>
@@ -173,7 +200,7 @@ export default class Resume extends React.Component {
 
 
                   <div className="row">
-                    <div className="col s12 m2 l2">
+                    <div className="col s12 m2 l2 light-blue-text text-darken-3">
                       <span className="date">Sep 2012</span>
                       <span className="date">Aug 2014</span>
                     </div>
@@ -193,48 +220,29 @@ export default class Resume extends React.Component {
                 </div>
 
                 <div className="col s12 m12 l12 recognitions">
-                  <h6>Recognitions</h6>
-                  <div className="row">
-                    <div className="col s12 m2 l2">
-                      <span className="date">Dec 2013</span>
-                    </div>
-                    <div className="col s12 m10 l10">
-                      <div className="title">Star Performer Award</div>
-                      <div className="description">Tata Consultancy Services</div>
-                    </div>
-                  </div>
+                  <h6 className="light-blue-text text-darken-3">Recognitions</h6>
 
                   <div className="row">
-                    <div className="col s12 m2 l2">
-                      <span className="date">Dec 2012</span>
+                    <div className="col s12 m2 l2 light-blue-text text-darken-3">
+                      <span className="date">Dec 2017</span>
                     </div>
                     <div className="col s12 m10 l10">
-                      <div className="title">Trainee Leadership Award</div>
-                      <div className="description">Tata Consultancy Services</div>
+                      <div className="title">HACK@CEWIT</div>
+                      <div className="description">Most Original Idea - Alexa Fitness Pal</div>
+                      <a href="https://devpost.com/software/alexa-fitness-pal" className="link">https://devpost.com/software/alexa-fitness-pal</a>
                     </div>
                   </div>
                 </div>
 
                 <div className="col s12 m12 l12 leadership">
-                  <h6>Leadership</h6>
+                  <h6 className="light-blue-text text-darken-3">Leadership</h6>
                   <div className="row">
-                    <div className="col s12 m2 l2">
+                    <div className="col s12 m2 l2 light-blue-text text-darken-3">
                       <span className="date">Aug 2014</span>
                     </div>
                     <div className="col s12 m10 l10">
                       <div className="title">ThoughtWorks Inc.</div>
                       <div className="description">Organised conferences hosted by ThoughtWorks</div>
-                    </div>
-                  </div>
-
-                  <div className="row">
-                    <div className="col s12 m2 l2">
-                      <span className="date">Aug 2009</span>
-                      <span className="date">May 2012</span>
-                    </div>
-                    <div className="col s12 m10 l10">
-                      <div className="title">Geekonix Science Club</div>
-                      <div className="description">Organising Committee</div>
                     </div>
                   </div>
                 </div>

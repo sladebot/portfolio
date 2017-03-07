@@ -3,13 +3,13 @@ import * as ReactDOM from 'react-dom';
 import { Router, Route, Link } from 'react-router';
 
 import Navbar from "./navbar";
-import { menuItems } from "./data/menu_items";
+import { menuItems, linkItems } from "./data/menu_items";
 
 export default class Portfolio extends React.Component {
   render() {
     return (
       <div className="home">
-        <Navbar menuItems={menuItems} location="left"/>
+        <Navbar menuItems={menuItems} location="left" linkItems={linkItems}/>
         <div className="container portfolio-container">
           <div className="row">
             <div className="col s12 m12 l12">

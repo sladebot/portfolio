@@ -3,13 +3,13 @@ import * as ReactDOM from 'react-dom';
 import { Router, Route, Link } from 'react-router';
 
 import Navbar from "./navbar";
-import { menuItems } from "./data/menu_items";
+import { menuItems, linkItems } from "./data/menu_items";
 
 export default class Home extends React.Component {
   render() {
     return (
       <div className="home">
-        <Navbar menuItems={menuItems} location="left"/>
+        <Navbar menuItems={menuItems} location="left" linkItems={linkItems}/>
         <div className="content">
           <h2 className="mantra animate fadeInUp one">
             Hello ! My name is Souranil <a href="https://github.com/sladebot" className="twitter-handle">@sladebot </a>. I am a developer and a design enthuasiast.

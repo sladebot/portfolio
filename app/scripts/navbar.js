@@ -24,6 +24,15 @@ export default class Navbar extends React.Component {
               </li>
             ))}
           </ul>
+          <ul className="right icon-items">
+            {_.map(this.props.linkItems, linkItem => (
+              <li>
+                <a href={linkItem.link}>
+                  <i className={"mdi mdi-" + linkItem.icon + " mdi-light mdi-36px"}></i>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </nav>       
     )

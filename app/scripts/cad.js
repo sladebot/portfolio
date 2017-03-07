@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { Router, Route, Link } from 'react-router';
 
 import Navbar from "./navbar";
-import { menuItems } from "./data/menu_items";
+import { menuItems, linkItems } from "./data/menu_items";
 
 export default class Cad extends React.Component {
   render() {

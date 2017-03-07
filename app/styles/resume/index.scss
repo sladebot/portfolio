@@ -1,12 +1,20 @@
 .resume-home {
   background: white;
-  color: #039be5;
+  // color: #039be5;
   font-family: "museo", "serif";
   font-weight: 300;
 
   .resume-container {
     h2, h6 {
       text-transform: uppercase;
+    }
+    .resume-link-items {
+      li {
+        padding: 0;
+        a {
+          padding: 0px 5px 0px 0px;
+        }
+      }
     }
     .intro {
       .links {
@@ -15,6 +23,7 @@
         margin-left: 10px;
         a {
           display: flex;
+          color: black;
           flex-direction: row;
         }
       }
@@ -31,6 +40,8 @@
       .description {
         width: 70%;
         margin-top: 5vh;
+        border-left: 4px solid rgb(3, 155, 229);
+        margin-left: 10px;
       }
 
       .skills {
