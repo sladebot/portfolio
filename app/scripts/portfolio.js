@@ -20,6 +20,29 @@ export default class Portfolio extends React.Component {
               </div>
             </div>
 
+             <div className="col s12 m4 l4">
+              <div className="card animate fadeInUp one">
+                <div className="card-image">
+                  <img className="img-height-limit" src="https://dl.dropbox.com/s/9xsuux2bidjtvzp/formband_1.JPG?dl=0"/>
+                  <span className="card-title">
+                    <Link to="/formband" className="white-text">
+                      formBand
+                    </Link>
+                  </span>
+                  <Link to="/formband" className="btn-floating halfway-fab waves-effect waves-light teal">
+                    <i className="material-icons">arrow_forward</i>
+                  </Link>
+                </div>
+                <div className="card-content">
+                  <div className="card-content-text">
+                    <p>A fitness arm band that guides you in your workouts.</p>
+                  </div>
+                  <div className="chip"><a href="https://www.twitter.com/hashtag/cad">#iot</a></div>
+                  <div className="chip"><a href="https://www.twitter.com/hashtag/design">#fitness</a></div>
+                </div>
+              </div>
+            </div>
+
             <div className="col s12 m4 l4">
               <div className="card animate fadeInUp one">
                 <div className="card-image">
