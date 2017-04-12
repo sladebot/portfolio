@@ -118,15 +118,153 @@ export default class FormBand extends React.Component {
             </div>
           </div>
 
+          <div className="row">
+            <div className="col s12 m12 l12 part-1">
+              <div className="card-panel teal">
+                <span className="white-text">
+                  <article>
+                    <div>
+                      <h4 className="white-text">Machine Learning, 3D fabricated case & communicating with the pi with the App</h4>
+                    </div>
+                    <div className="answer">
+                      We used an ad-hoc network to communicate between the phone and raspberry pi for simplicity. The raspberry pi will listen to a specific port for connections. 
+                      When the user initiates a specific workout through the app, a message is sent to the raspberry pi and it will record data for that workout. 
+                      All machine learning and data filtering is done on the pi, and the pi will give periodically send feedback to the phone about the workout. 
+                      This feedback can vary with exercise but will give an indication of how well the user is performing the exercise. This feedback is displayed on the phone and the connection is terminated when the user presses the "Stop" button on the app.
+                      The communication protocol with the pi is completed, and we are working on analyzing the data from our accelerometer sensor. 
+                      Currently, the data being sent is accelerometer data, which is plotted on the phone. This visualization will help us in the development process to analyze the data and make models. 
+                      In the video, the x_rotation data is being sent to the phone which is useful in classifying pushups, because the sensor is moved on this axis during the exercise. 
+                      The demo shows that rotating the sensor on the x axis produces measurable readings while rotating on other axis' do not really affect the x_rotation data, which is expected. 
+                      By isolating certain readings we get from the accelerometer + gyro, we can make reliable models to detect different exercises.
+                    </div>
+                    <div className="wrapper">
+                      <div className="videocontent">
+                        <video id="my-video" className="video-js vjs-default-skin vjs-16-9" controls preload="auto" width="900" data-setup="{}">
+                          <source src="https://dl.dropbox.com/s/jqkywv8aibjqfp2/formband-vid-02.mov?dl=0" type='video/mp4'/>
+                        </video>
+                      </div>
+                    </div>
+                  </article>
+                </span>
+              </div>
+            </div>
+
+            <div className="col s4 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/75cb6b9vi2c4vh8/form-band-01.jpg?dl=0" />
+                  <span className="card-title pacifico"></span>
+                </div>
+              </div>
+            </div>
+            <div className="col s4 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/0qlzxd85pgqjmie/form-band-02.jpg?dl=0" />
+                  <span className="card-title pacifico"></span>
+                </div>
+              </div>
+            </div>
+            <div className="col s4 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/jw779m0ya2efjur/form-band-03.jpg?dl=0" />
+                  <span className="card-title pacifico"></span>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col s12 m12 l12 part-1">
+              <div className="card-panel teal">
+                <span className="white-text">
+                  <article>
+                    <div>
+                      <h4 className="white-text">Physical Prototype & Data analysis</h4>
+                    </div>
+                    <div className="answer">
+                      To make the prototyping easier, we wanted to ditch the breadboard to wire the accelerometer and place the 
+                      accelerometer directly on the GPIO pins of the raspberry pi. Specifically, we wanted to place the accelerometer 
+                      on physical pins 4,6,8,10 since 4 and 6 are already power and ground, so the only change would involve 8 and 10 
+                      becoming SDA and SCL. Reconfiguring the GPIO requires recompiling a config file, so we followed 
+                      <u><a href="https://www.raspberrypi.org/documentation/configuration/pin-configuration.md"> this </a></u> tutorial. 
+                      However, even after making the desired changes and recompiling, the raspberry pi seems to still use the default 
+                      configuration. We are still working on this issue, experimenting with changing different GPIO pins.
+                    </div>
+                    <div className="answer">
+                      Apart from that we have accumulated the gyroscope and accelerometer data and working on a classifier which should 
+                      be able to detect the workouts.
+                    </div>
+                  </article>
+                </span>
+              </div>
+            </div>
+            <div className="col s4 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/pfqgbde9or1qef8/IMG_1800.jpg?dl=0" />
+                  <span className="card-title pacifico"></span>
+                </div>
+              </div>
+            </div>
+            <div className="col s4 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/ee2hw7lpte1r5fo/IMG_1801.jpg?dl=0" />
+                  <span className="card-title pacifico"></span>
+                </div>
+              </div>
+            </div>
+            <div className="col s4 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/z1sywjgh3ymc59x/IMG_1802.jpg?dl=0" />
+                  <span className="card-title pacifico"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
           <div className="row">
             <div className="col s12 m12 l12 part-1">
               <div className="card-panel teal">
                 <span className="white-text">
                   <article>
-                    <div className="intro">
-                      <span className="bold">Assignment 1 - </span>
-                      Visualizing sensor data for project using Processing
+                    <div>
+                      <h4 className="white-text">Sensor data in mobile app</h4>
+                    </div>
+                    <div className="answer">
+                      For this part we are sending the data to an iOS mobile app which is then changing the values of three sliders based on the accelerometer(MPU-6050) readings sent by the raspberry pi zero.
+                      We also calculated the ranges for the accelerometer data, gyro rotations etc. and are currently using only accelerometer data for the app. We plan to filter the data more and 
+                      calibrate the data flow more to optimize visualizing it on the app.
+                    </div>
+
+                    <p>
+                      Here's a sneak peak of how sensor readings are being reflected in the app - 
+                    </p>
+                    
+                    <div className="wrapper">
+                      <div className="videocontent">
+                        <video id="my-video" className="video-js vjs-default-skin vjs-16-9" controls preload="auto" width="900" data-setup="{}">
+                          <source src="https://dl.dropbox.com/s/cp8p4crni61j91s/accelerometer.mp4?dl=0" type='video/mp4'/>
+                        </video>
+                      </div>
+                    </div>
+                  </article>
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="row">
+            <div className="col s12 m12 l12 part-1">
+              <div className="card-panel teal">
+                <span className="white-text">
+                  <article>
+                    <div>
+                      <h4 className="white-text">Visualizing sensor data for project using Processing</h4>
                     </div>
                     <div className="answer">
                       For this assignment, we connected our accelerometer (MPU-6050) with an arduino and printed the readings. We used a library for the MPU-6050 <a href="https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050" className="link white-blue">https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050</a> to convert the raw readings to meaningful data, such as x, y, and z rotation. 
