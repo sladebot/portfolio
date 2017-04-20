@@ -124,6 +124,66 @@ export default class FormBand extends React.Component {
                 <span className="white-text">
                   <article>
                     <div>
+                      <h4 className="white-text">User Study</h4>
+                    </div>
+                    <div className="answer">
+                      <h6 className="user-study--header">Experimental</h6>
+                      <div>
+                        For our project feedback is a critical element towards the goal of formband which is to help people achieve better quality workouts. 
+                        So we have thought to design our primary User Study around that. We will have a group of people wearing the formband and performing workouts
+                        with feedback provided by formband and a group of people who will do exactly the same but without the feedbacks. After that we will compare
+                        the data for both the groups and check if feedbacks actually helped.
+                      </div>
+                    </div>
+                    <div className="answer">
+                      <h6 className="user-study--header white-text">Correlational</h6>
+                      <div>
+                        Well this was an interesting idea that spawned up our minds, what if feedbacks by the formband also acts as an indicator to the person
+                        doing well and that motivates them to actually workout more. We can also observe the amount of workout done by the group with and without
+                        feedbacks and what is the difference between the amount of workouts done. This is also biased by the fact that each person have their own 
+                        limits for workouts.
+                      </div>
+                    </div>
+                    <div className="answer">
+                      <h6 className="user-study--header white-text">Demographics</h6>
+                      <div>
+                        A user study can also be designed for formband around gender. We will have groups of different genders and further divide them into two groups, 
+                        one with feedback and the later without it. We then get 4 groups with different combinations of gender and feedbacks to run our study on. 
+                        Additionally the user group under study will be in a fixed age range which will act as a control variable.
+                      </div>
+                    </div>
+
+                    <div className="answer">
+                      <h6 className="user-study--header white-text">Questionnaires / Poll</h6>
+                      <div>
+                        For formband a simple Yes/No poll based questionnaire can be used for getting an idea how the people think this might help
+                        them even before using it, just because of the fact that people think first how it might help them and then go and use / buy
+                        something like this. This data can also be easily sliced by demographics, age group, gender etc. This can also give us enough 
+                        information as to where can formband fit in more and why people that this might not work and thus use these information to 
+                        make it better.
+                      </div>
+                    </div>
+
+                    <div className="disclaimer white-text">
+                      <h6>Disclaimer :</h6>
+                      <div>
+                        These tests will be carried out in the same environment with similar test conditions. There may be independent variables like some people
+                        might have prior experience with the workouts and might perform comparatively better even without feedbacks.
+                      </div>
+
+                    </div>
+
+                  </article>
+                </span>
+              </div>
+            </div>
+
+
+            <div className="col s12 m12 l12 part-1">
+              <div className="card-panel teal">
+                <span className="white-text">
+                  <article>
+                    <div>
                       <h4 className="white-text">Machine Learning, 3D fabricated case & communicating with the pi with the App</h4>
                     </div>
                     <div className="answer">
