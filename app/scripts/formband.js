@@ -134,6 +134,27 @@ export default class FormBand extends React.Component {
                         with feedback provided by formband and a group of people who will do exactly the same but without the feedbacks. After that we will compare
                         the data for both the groups and check if feedbacks actually helped.
                       </div>
+                      <div className="row">
+                        <div className="col s12 m12 l12 user-study--results">
+                          <div className="results">
+                            <p>
+                              One of our hypothesis was that feedback would help the user perform more correct jabs. 
+                              For the first test we collected 8 samples of jabs done with feedback and 7 samples of jabs done without feedback. Each sample was the number of correct jabs done out of 10.
+	                            This test yields a t-value of 2.16 (13 degrees of freedom). After computing the t-score using our mean and variance we yielded 0.4026511258. This means we are forced to accept the null hypothesis which states that feedback did not create tangible improvement in correct jabs. This is not the ideal result.
+                            </p>
+
+                          </div>
+                        </div>
+                        <div className="col s12 m12 l12 usr-study--experimental">
+                          <div className="card">
+                            <div className="card-image">
+                              <img className="materialboxed" src="https://dl.dropbox.com/s/nn9sr5ulvg4o272/user-analysis-1.png?dl=0" />
+                              <span className="card-title pacifico"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
                     </div>
                     <div className="answer">
                       <h6 className="user-study--header white-text">Correlational</h6>
@@ -143,6 +164,11 @@ export default class FormBand extends React.Component {
                         feedbacks and what is the difference between the amount of workouts done. This is also biased by the fact that each person have their own 
                         limits for workouts.
                       </div>
+                      <div className="results">
+                        After doing the user study and survey we found actually the feedbacks help people be consious about doing the right workouts. It also helps 
+                        motivate few people to do it correctly for most of the users while a few users were neutral to it. One valuable suggestion was not to give
+                        visual feedback but some feedback like vibration on the band itself so that the user doesn't have to look at the app itself.
+                      </div>
                     </div>
                     <div className="answer">
                       <h6 className="user-study--header white-text">Demographics</h6>
@@ -150,6 +176,23 @@ export default class FormBand extends React.Component {
                         A user study can also be designed for formband around gender. We will have groups of different genders and further divide them into two groups, 
                         one with feedback and the later without it. We then get 4 groups with different combinations of gender and feedbacks to run our study on. 
                         Additionally the user group under study will be in a fixed age range which will act as a control variable.
+                      </div>
+                      <div className="row">
+                        <div className="col s12 m12 l12 usr-study--experimental">
+                          <div className="results">
+                            <p>
+                              The second hypothesis was that males and female’s should both benefit equally from FormBand.
+                            For this test we collected 4 samples from men and 4 from women. Each sample was the number of correct jabs done out of 10 with feedback.
+                            This test yields a t-value of 2.45 (6 degrees of freedom). After computing the t-score using our mean and variance we yielded 0.774. This means that our hypothesis that men and women receive the same benefit was correct. This is a good result.
+                            </p>
+                          </div>
+                          <div className="card">
+                            <div className="card-image">
+                              <img className="materialboxed" src="https://dl.dropbox.com/s/wmrmjf8iukko4x3/user-analysis-2.png?dl=0" />
+                              <span className="card-title pacifico"></span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
@@ -161,6 +204,49 @@ export default class FormBand extends React.Component {
                         something like this. This data can also be easily sliced by demographics, age group, gender etc. This can also give us enough 
                         information as to where can formband fit in more and why people that this might not work and thus use these information to 
                         make it better.
+                      </div>
+                      <div className="row">
+                        <div className="col s12 m12 l12 user-study--results">
+                          <div className="results">
+                            We did a survey on few users on what they think about this idea and their views on such a product. We found some interesting insights
+                            from it -  
+
+                          </div>
+                        </div>
+                        <div className="col s6 m6 l6 usr-study--experimental">
+                          <div className="card">
+                            <div className="card-image">
+                              <img className="materialboxed" src="https://dl.dropbox.com/s/cij50r0fvxgld4m/user-survey-1.png?dl=0" />
+                              <span className="card-title pacifico"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col s6 m6 l6 usr-study--experimental">
+                          <div className="card">
+                            <div className="card-image">
+                              <img className="materialboxed" src="https://dl.dropbox.com/s/n309kpge04r1di8/user-survey-2.png?dl=0" />
+                              <span className="card-title pacifico"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col s6 m6 l6 usr-study--experimental">
+                          <div className="card">
+                            <div className="card-image">
+                              <img className="materialboxed" src="https://dl.dropbox.com/s/8jyh04uhgs0qoxi/user-survey-3.png?dl=0" />
+                              <span className="card-title pacifico"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col s6 m6 l6 usr-study--experimental">
+                          <div className="card">
+                            <div className="card-image">
+                              <img className="materialboxed" src="https://dl.dropbox.com/s/2tryldk5ztu5h0e/user-survey-4.png?dl=0" />
+                              <span className="card-title pacifico"></span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
@@ -262,7 +348,7 @@ export default class FormBand extends React.Component {
             <div className="col s4 m4 l4">
               <div className="card">
                 <div className="card-image">
-                  <img className="materialboxed" src="https://dl.dropbox.com/s/pfqgbde9or1qef8/IMG_1800.jpg?dl=0" />
+                  <img className="materialboxed limit-height" src="https://dl.dropbox.com/s/pfqgbde9or1qef8/IMG_1800.jpg?dl=0" />
                   <span className="card-title pacifico"></span>
                 </div>
               </div>

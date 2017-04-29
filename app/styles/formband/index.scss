@@ -7,11 +7,18 @@ a.link {
 }
 .answer {
   margin-bottom: 10px;
+  .results {
+    margin-top: 10px;
+  }
 }
 .intro h4 {
   margin-bottom: 10px;
 }
 .materialboxed {
+  // max-height: 240px;
+}
+
+.limit-height {
   max-height: 240px;
 }
 
