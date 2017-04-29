@@ -283,6 +283,11 @@ export default class FormBand extends React.Component {
                       The demo shows that rotating the sensor on the x axis produces measurable readings while rotating on other axis' do not really affect the x_rotation data, which is expected. 
                       By isolating certain readings we get from the accelerometer + gyro, we can make reliable models to detect different exercises.
                     </div>
+                    <div className="results">
+                      We used Multi Variate Dynamic Time Warping with some training data and trained a model for matching the sampled data coming from the user's workouts. We trained with 
+                      good jabs, bad jabs and also with data for doing nothing or standing still and some datasets of starting position for jabs. This helped us get better ratings for getting 
+                      good jabs from the algorithm.
+                    </div>
                     <div className="wrapper">
                       <div className="videocontent">
                         <video id="my-video" className="video-js vjs-default-skin vjs-16-9" controls preload="auto" width="900" data-setup="{}">
