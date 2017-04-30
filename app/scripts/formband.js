@@ -127,12 +127,44 @@ export default class FormBand extends React.Component {
                       <h4 className="white-text">User Study</h4>
                     </div>
                     <div className="answer">
+                      <h6 className="user-study--header">Research Question</h6>
+                      <div>
+                        Does FormBand help people do exercises more correctly?
+                      </div>
+                      <h6 className="user-study--header">Independent Variables</h6>
+                      <div>
+                        1. Show/Not show participants that the number of correct exercises they perform
+                        2. Participant Gender
+                        3. The type of exercise
+                      </div>
+                      <h6 className="user-study--header">Dependent Variables</h6>
+                      <div>
+                        1. How accurate participants perform a type of exercise
+                        2. The time it takes to complete one exercise
+                        3. The time it takes to complete a set of exercises
+                      </div>
+                      <h6 className="user-study--header">Control Variables</h6>
+                      <div>
+                        1. Standard procedure to do a good exercise
+                        2. iOS app interface
+                        3. Wrist band location
+                      </div>
+                      <h6 className="user-study--header">Random Variables</h6>
+                      <div>
+                        1. Prior experience doing exercises
+                        2. Prior experience of using other exercise IT equipment.
+                        3. Willingness to do exercises
+                      </div>
                       <h6 className="user-study--header">Experimental</h6>
                       <div>
                         For our project feedback is a critical element towards the goal of formband which is to help people achieve better quality workouts. 
                         So we have thought to design our primary User Study around that. We will have a group of people wearing the formband and performing workouts
                         with feedback provided by formband and a group of people who will do exactly the same but without the feedbacks. After that we will compare
                         the data for both the groups and check if feedbacks actually helped.
+                      </div>
+                      <h6 className="user-study--header">Participants</h6>
+                      <div>
+                        CSE592 HCI students and professor.
                       </div>
                       <div className="row">
                         <div className="col s12 m12 l12 user-study--results">
@@ -175,15 +207,18 @@ export default class FormBand extends React.Component {
                       <div>
                         A user study can also be designed for formband around gender. We will have groups of different genders and further divide them into two groups, 
                         one with feedback and the later without it. We then get 4 groups with different combinations of gender and feedbacks to run our study on. 
-                        Additionally the user group under study will be in a fixed age range which will act as a control variable.
+                        Additionally the user group under study will be in a fixed age (20-30) range which will act as a control variable.
                       </div>
+                      <h6 className="user-study--header white-text">Results</h6>
                       <div className="row">
                         <div className="col s12 m12 l12 usr-study--experimental">
                           <div className="results">
                             <p>
                               The second hypothesis was that males and female’s should both benefit equally from FormBand.
-                            For this test we collected 4 samples from men and 4 from women. Each sample was the number of correct jabs done out of 10 with feedback.
-                            This test yields a t-value of 2.45 (6 degrees of freedom). After computing the t-score using our mean and variance we yielded 0.774. This means that our hypothesis that men and women receive the same benefit was correct. This is a good result.
+                              For this test we collected 4 samples from men and 4 from women. Each sample was the number of correct jabs done out of 10 with feedback.
+                              The mean of doing correct # of jabs is 7.5 with standard deviation 1 for male and 7 with standard deviation 0.8165 for females.
+                              This test yields a t-value of 2.45 (6 degrees of freedom). After computing the t-score using our mean and variance we yielded 0.774. This means that our hypothesis that men and women receive the same benefit was correct.
+                              This is a good result.
                             </p>
                           </div>
                           <div className="card">
