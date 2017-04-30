@@ -242,6 +242,14 @@ export default class FormBand extends React.Component {
                             </div>
                           </div>
                         </div>
+                        <div className="col s12 m12 l12 usr-study--experimental">
+                          <div className="card">
+                            <div className="card-image">
+                              <img className="materialboxed" src="https://dl.dropbox.com/s/2qae9b1ty5h88i4/chart.png?dl=0" />
+                              <span className="card-title pacifico"></span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
