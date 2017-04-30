@@ -133,27 +133,41 @@ export default class FormBand extends React.Component {
                       </div>
                       <h6 className="user-study--header">Independent Variables</h6>
                       <div>
-                        1. Show/Not show participants that the number of correct exercises they perform
-                        2. Participant Gender
-                        3. The type of exercise
+                        <ul>
+                          <li>
+                            1. Show/Not show participants that the number of correct exercises they perform
+                          </li>
+                          <li>
+                            2. Participant Gender
+                          </li>
+                          <li>
+                            3. The type of exercise
+                          </li>
+                        </ul>
                       </div>
                       <h6 className="user-study--header">Dependent Variables</h6>
                       <div>
-                        1. How accurate participants perform a type of exercise
-                        2. The time it takes to complete one exercise
-                        3. The time it takes to complete a set of exercises
+                        <ul>
+                          <li>1. How accurate participants perform a type of exercise</li>
+                          <li>2. The time it takes to complete one exercise</li>
+                          <li>3. The time it takes to complete a set of exercises</li>
+                        </ul>
                       </div>
                       <h6 className="user-study--header">Control Variables</h6>
                       <div>
-                        1. Standard procedure to do a good exercise
-                        2. iOS app interface
-                        3. Wrist band location
+                        <ul>
+                          <li>1. Standard procedure to do a good exercise</li>
+                          <li>2. iOS app interface</li>
+                          <li>3. Wrist band location</li>
+                        </ul>
                       </div>
                       <h6 className="user-study--header">Random Variables</h6>
                       <div>
-                        1. Prior experience doing exercises
-                        2. Prior experience of using other exercise IT equipment.
-                        3. Willingness to do exercises
+                        <ul>
+                          <li>1. Prior experience doing exercises</li>
+                          <li>2. Prior experience of using other exercise IT equipment.</li>
+                          <li>3. Willingness to do exercises</li>
+                        </ul>
                       </div>
                       <h6 className="user-study--header">Experimental</h6>
                       <div>
