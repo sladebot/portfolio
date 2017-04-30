@@ -235,6 +235,7 @@ export default class FormBand extends React.Component {
                               This is a good result.
                             </p>
                           </div>
+
                           <div className="card">
                             <div className="card-image">
                               <img className="materialboxed" src="https://dl.dropbox.com/s/wmrmjf8iukko4x3/user-analysis-2.png?dl=0" />
@@ -245,7 +246,7 @@ export default class FormBand extends React.Component {
                         <div className="col s12 m12 l12 usr-study--experimental">
                           <div className="card">
                             <div className="card-image">
-                              <img className="materialboxed" src="https://dl.dropbox.com/s/2qae9b1ty5h88i4/chart.png?dl=0" />
+                              <img className="materialboxed" src="https://dl.dropbox.com/s/wb0fef5n4k5x0d0/chart.png?dl=0" />
                               <span className="card-title pacifico"></span>
                             </div>
                           </div>
