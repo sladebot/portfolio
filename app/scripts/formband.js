@@ -408,7 +408,7 @@ export default class FormBand extends React.Component {
                 </span>
               </div>
             </div>
-            <div className="col s4 m4 l4">
+            {/*<div className="col s4 m4 l4">
               <div className="card">
                 <div className="card-image">
                   <img className="materialboxed limit-height" src="https://dl.dropbox.com/s/pfqgbde9or1qef8/IMG_1800.jpg?dl=0" />
@@ -428,6 +428,30 @@ export default class FormBand extends React.Component {
               <div className="card">
                 <div className="card-image">
                   <img className="materialboxed" src="https://dl.dropbox.com/s/z1sywjgh3ymc59x/IMG_1802.jpg?dl=0" />
+                  <span className="card-title pacifico"></span>
+                </div>
+              </div>
+            </div>*/}
+            <div className="col s4 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed limit-height" src="https://dl.dropbox.com/s/wg8wldkxi38k418/proto-1.png?dl=0" />
+                  <span className="card-title pacifico"></span>
+                </div>
+              </div>
+            </div>
+            <div className="col s4 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed limit-height" src="https://dl.dropbox.com/s/yqyqjojiq9tnbpn/proto-2.png?dl=0" />
+                  <span className="card-title pacifico"></span>
+                </div>
+              </div>
+            </div>
+            <div className="col s4 m4 l4">
+              <div className="card">
+                <div className="card-image">
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/s4j9i8cc2xylw7c/proto-3.png?dl=0" />
                   <span className="card-title pacifico"></span>
                 </div>
               </div>
