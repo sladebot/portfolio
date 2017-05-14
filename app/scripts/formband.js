@@ -17,6 +17,18 @@ export default class FormBand extends React.Component {
         <div className="container sketch-container animate fadeInUp one">
           
           <div className="row">
+            <div className="col s4 m4 l4">
+              
+            </div>
+            <div className="col s4 m4 l4">
+              <a href="https://dl.dropbox.com/s/djspswytfksj7s5/formband.pdf?dl=0" className="link waves-effect waves-light teal white-text btn">Project Report</a>
+            </div>
+            <div className="col s4 m4 l4">
+              
+            </div>
+          </div>
+
+          <div className="row">
             <div className="col s12 m12 l12">
               <h4 className="pacifico">
                 Why can't your fitness band tell you if you are working out right ?
