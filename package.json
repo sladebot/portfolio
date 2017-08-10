@@ -2,7 +2,7 @@
   "dependencies": {
     "bower": "^1.8.0",
     "development": "^0.0.6",
-    "global": "^4.3.1",
+    "global": "^4.3.2",
     "grunt": "^1.0.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-sass": "^3.1.0",

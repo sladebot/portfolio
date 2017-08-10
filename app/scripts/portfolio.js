@@ -23,7 +23,7 @@ export default class Portfolio extends React.Component {
              <div className="col s12 m4 l4">
               <div className="card animate fadeInUp one">
                 <div className="card-image">
-                  <img className="img-height-limit" src="https://dl.dropbox.com/s/9xsuux2bidjtvzp/formband_1.JPG?dl=0"/>
+                  <img className="img-height-limit" src="https://dl.dropbox.com/s/7wheh6933f7rx41/formband-01.png?dl=0"/>
                   <span className="card-title">
                     <Link to="/formband" className="white-text">
                       formBand

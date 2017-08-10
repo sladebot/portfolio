@@ -21,7 +21,7 @@ export default class FormBand extends React.Component {
               
             </div>
             <div className="col s4 m4 l4">
-              <a href="https://dl.dropbox.com/s/djspswytfksj7s5/formband.pdf?dl=0" className="link waves-effect waves-light teal white-text btn">Project Report</a>
+              <a href="https://dl.dropbox.com/s/y24g79k89ojushc/Final_Report.pdf?dl=0" className="link waves-effect waves-light teal white-text btn">Project Report</a>
             </div>
             <div className="col s4 m4 l4">
               
@@ -47,10 +47,11 @@ export default class FormBand extends React.Component {
           </div>
 
           <div className="row">
+
             <div className="col s6 m6 l6">
               <div className="card">
                 <div className="card-image">
-                  <img className="materialboxed" src="https://dl.dropbox.com/s/9xsuux2bidjtvzp/formband_1.JPG?dl=0" />
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/16zsadjb4riteta/formband-02.png?dl=0" />
                   <span className="card-title pacifico"></span>
                 </div>
               </div>
@@ -59,16 +60,7 @@ export default class FormBand extends React.Component {
             <div className="col s6 m6 l6">
               <div className="card">
                 <div className="card-image">
-                  <img className="materialboxed" src="https://dl.dropbox.com/s/tl2a1hdp887nc1k/formband_2.JPG?dl=0" />
-                  <span className="card-title pacifico"></span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="col s6 m6 l6">
-              <div className="card">
-                <div className="card-image">
-                  <img className="materialboxed" src="https://dl.dropbox.com/s/lviz8hvp9ojq913/formband_3.JPG?dl=0" />
+                  <img className="materialboxed" src="https://dl.dropbox.com/s/9xsuux2bidjtvzp/formband_1.JPG?dl=0" />
                   <span className="card-title pacifico"></span>
                 </div>
               </div>
